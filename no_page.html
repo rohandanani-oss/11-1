@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Knew!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Match the animated background from index.html */
+        body { background: linear-gradient(135deg, #ffc0cb 0%, #fff0f5 100%); }
+        /* Add a typewriter effect for the message */
+        .typewriter h2 {
+            border-right: .15em solid #E11D48; /* Cursor effect */
+            white-space: nowrap;
+            overflow: hidden;
+            letter-spacing: .1em;
+            animation: typewriter 4s steps(40, end), blink-caret .75s step-end infinite;
+            width: 0;
+            font-size: 2.5rem;
+        }
+        @keyframes typewriter {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #E11D48; }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen font-sans">
+    
+    <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl max-w-xl w-full border-4 border-rose-red text-left z-10 animate-fadeIn" style="border-style: ridge;">
+        <div class="typewriter mb-6">
+            <h2 class="text-rose-red font-script text-4xl leading-snug">
+                You remembered! That makes me so happy.
+            </h2>
+        </div>
+        
+        <div class="bg-soft-pink p-6 rounded-xl border border-primary-pink mt-6">
+            <p class="text-xl font-bold text-gray-800 mb-4">
+                **Okay, so it's 11/11 today.**
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed font-sans animate-fadeIn" style="animation-delay: 4s;">
+                This date is special because every day with you feels like a wish come true. Seeing you smile is the greatest gift. I want you to know, with every beat of my heart, that I am yours completely. No matter what challenges we face, **I promise I will never leave you.** You are my forever.
+            </p>
+            <p class="text-right text-xl font-script text-primary-pink mt-8">- All My Love</p>
+        </div>
+    </div>
+
+</body>
+</html>
